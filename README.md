@@ -20,8 +20,7 @@ Make sure your MATLAB and its Image Processing Toolbox add-on are up to date, an
 
 Launch NanoEx.m, and point the dialog to Test Image for Review.lif.
 
-Once it loads (this might take a minute), a dialog will ask for the sequence number from the list on the left. This sample file contains only sequence 1, so input 1. 
-
+Once it loads (this might take a minute), a dialog will ask for the sequence number to analyze from the list on the left.
 A max intensity projection of the nuclei will appear, allowing you to draw points of a polygonal ROI (we used this to isolate the the Inner Nuclear Layer). double-click the last point to close the polygon and proceed.
 
 You will then be asked to threshold the antibody channel. the sample image is a staining for Calbindin1, which marks Horizontal Cells of the outer retina. the upper slider in the window is the threshold level, coupled with a density histogram. the lower slider is the z-depth.
