@@ -10,23 +10,21 @@ Included files:
 	NanoEx.m - main script file (launch this)
 	ci_loadLif.m - script to load Leica .lif files into MATLAB (made by Ron Hoebe, Cellular Imaging - Core Facility, AMC - UvA - Amsterdam - The Netherlands)
 	abThresh.m - function module to handle inputs and outputs for channel thresholding
-	Test Image for Review.lif - sample raw image containing a juxta-injection-site z-stack acquisition on 3 channels: Hoechst, Alexa 488 (anti-Calbindin1), P3HT fluorescence at 650-700nm.
-	Test Image for Review.lifext - extended metadata file for the above
 
 Instructions:
 Make sure your MATLAB and its Image Processing Toolbox add-on are up to date, and run MATLAB with admin rights.
 
-Unpack all files to a folder and set it as current path on MATLAB.
+IMPORTANT: This script was made to work with a 3-channel image with nuclear staining on channel 1, antibody staining on channel 2 and NP fluorescence on channel 3. other channel numbers/configurations might give nonsensical results or not work outright.
 
-Launch NanoEx.m, and point the dialog to Test Image for Review.lif.
+Launch NanoEx.m, and point the dialog to the .lif file to analyze.
 
-Once it loads (this might take a minute), a dialog will ask for the sequence number from the list on the left. This sample file contains only sequence 1, so input 1. 
+Once it loads (this might take a minute), a dialog will ask for the sequence number from the list on the left. 
 
-A max intensity projection of the nuclei will appear, allowing you to draw points of a polygonal ROI (we used this to isolate the the Inner Nuclear Layer). double-click the last point to close the polygon and proceed.
+A max intensity projection of the nuclei will appear, allowing you to draw points of a polygonal ROI (we used this to isolate the the retinal Inner Nuclear Layer). double-click the last point to close the polygon and proceed.
 
-You will then be asked to threshold the antibody channel. the sample image is a staining for Calbindin1, which marks Horizontal Cells of the outer retina. the upper slider in the window is the threshold level, coupled with a density histogram. the lower slider is the z-depth.
-once you set and apply, you will be asked to threshold the P3HT channel in the same manner.
+You will then be asked to threshold the antibody channel. The upper slider in the window is the threshold level, coupled with a density histogram. the lower slider is the z-depth.
+once you set and apply, you will be asked to threshold the NP channel in the same manner.
 
-The following elaboration phase might take a couple of minutes, after which you should see a 3D plot of your image with the P3HT in red and P3HT-Antibody contacts represented by magenta squares.
+The following elaboration phase might take a couple of minutes, after which you should see a 3D plot of your image with the NP in red and NP-Antibody contacts represented by magenta squares.
 
 This figure and the output data will be written to an .xlsx file in a new folder named Output Data.
