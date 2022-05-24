@@ -1,5 +1,3 @@
-# nanoextractor
-MATLAB script for .lif image analysis of P3HT nanoparticles
 Colocalization and Quantification script for P3HT Immunofluorescence
 
 This script was built and run in MATLAB R2021a running on Windows 10 Pro, v10.0.18362 Build 18362
@@ -18,10 +16,12 @@ Included files:
 Instructions:
 Make sure your MATLAB and its Image Processing Toolbox add-on are up to date, and run MATLAB with admin rights.
 
-Launch NanoEx.m, and point the dialog to the 3-channel .lif to analyze.
-Nuclear staining should be on channel 1, Antibody on channel 2 and Nanoparticles on channel 3.
+Unpack all files to a folder and set it as current path on MATLAB.
 
-Once it loads (this might take a minute), a dialog will ask for the sequence number to analyze from the list on the left.
+Launch NanoEx.m, and point the dialog to Test Image for Review.lif.
+
+Once it loads (this might take a minute), a dialog will ask for the sequence number from the list on the left. This sample file contains only sequence 1, so input 1. 
+
 A max intensity projection of the nuclei will appear, allowing you to draw points of a polygonal ROI (we used this to isolate the the Inner Nuclear Layer). double-click the last point to close the polygon and proceed.
 
 You will then be asked to threshold the antibody channel. the sample image is a staining for Calbindin1, which marks Horizontal Cells of the outer retina. the upper slider in the window is the threshold level, coupled with a density histogram. the lower slider is the z-depth.
@@ -30,4 +30,3 @@ once you set and apply, you will be asked to threshold the P3HT channel in the s
 The following elaboration phase might take a couple of minutes, after which you should see a 3D plot of your image with the P3HT in red and P3HT-Antibody contacts represented by magenta squares.
 
 This figure and the output data will be written to an .xlsx file in a new folder named Output Data.
-
