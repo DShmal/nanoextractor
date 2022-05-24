@@ -18,7 +18,8 @@ Included files:
 Instructions:
 Make sure your MATLAB and its Image Processing Toolbox add-on are up to date, and run MATLAB with admin rights.
 
-Launch NanoEx.m, and point the dialog to Test Image for Review.lif.
+Launch NanoEx.m, and point the dialog to the 3-channel .lif to analyze.
+Nuclear staining should be on channel 1, Antibody on channel 2 and Nanoparticles on channel 3.
 
 Once it loads (this might take a minute), a dialog will ask for the sequence number to analyze from the list on the left.
 A max intensity projection of the nuclei will appear, allowing you to draw points of a polygonal ROI (we used this to isolate the the Inner Nuclear Layer). double-click the last point to close the polygon and proceed.
