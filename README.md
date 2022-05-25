@@ -7,9 +7,11 @@ MATLAB and MATLAB Image Processing Toolbox
 ImageJ (recommended to keep clean reference open while thresholding)
 
 Included files:
-	NanoEx.m - main script file (launch this)
-	ci_loadLif.m - script to load Leica .lif files into MATLAB (made by Ron Hoebe, Cellular Imaging - Core Facility, AMC - UvA - Amsterdam - The Netherlands)[1]
-	abThresh.m - function module to handle inputs and outputs for channel thresholding
+- NanoEx.m - main script file (launch this)
+	
+- ci_loadLif.m - script to load Leica .lif files into MATLAB (made by Ron Hoebe, Cellular Imaging - Core Facility, AMC - UvA - Amsterdam - The Netherlands)[1]
+	
+- abThresh.m - function module to handle inputs and outputs for channel thresholding
 
 Instructions:
 Make sure your MATLAB and its Image Processing Toolbox add-on are up to date, and run MATLAB with admin rights.
